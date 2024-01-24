@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>daynamic web page</title>
+    <script type="text/javascript" src="first.js"></script>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label>
+                from left:
+                <input type="text" id="leftcoord" size="3">
+            </label>
+            <br>
+            <label>
+                from top:
+                <input type="text" id="topcoord" size="3">
+            </label>
+            <br>
+            <input type="button" value="move it"
+                onclick="move('rabbit',
+                document.getElementById('topcoord').value,
+                document.getElementById('leftcoord').value)">
+        </p>
+    </form>
+    <div id="rabbit" style="position: absolute;top: 150px;left: 0px">
+    <img src="illustration-cute-rabbit-cartoon-isolated-white-background-cute-rabbit-cartoon-isolated-white-background-113194593.jpg" width="100px" alt="rabbit">
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <form action="">
+        <p>
+            <br>
+            <input type = "button" value="hide" onclick="push()">
+            <div id="volcano" style = "position: relative; visibility: visible;">
+            <img src="illustration-of-eruption-volcano-in-cartoon-style-vector.jpg" width="100px" alt="hide">
+            </div>
+        </p>
+    </form>
+    <br>
+    <form action="">
+        <p>
+            <br>
+            <input type = "button" value="click" onclick="last()">
+            <div id="last" style = "position: relative; visibility: visible;">
+            <img src="90025929-cartoon-magicians-hands-holding-a-magic-wand.jpg" width="100px" alt="hide">
+            </div>
+        </p>
+    </form>
+    
